@@ -133,6 +133,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    z-index: 1;
 }
 
 .side-menu__items {

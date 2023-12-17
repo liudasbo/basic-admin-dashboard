@@ -14,3 +14,33 @@ function toggleTheme() {
 }
 
 themeBtn.addEventListener('click', toggleTheme);
+
+// toggle side menu 
+const sideMenuBtn = document.getElementById('sideMenuBtn');
+const sideMenu = document.querySelector('.side-menu');
+
+let isSideMenuOpen = false;
+
+function toggleSideMenu() {
+
+    if (sideMenu.style.display === 'flex') {
+        sideMenu.style.display = 'none';
+        sideMenuBtn.textContent = 'menu';
+        isSideMenuOpen = false;
+    } else {
+        sideMenu.style.display = 'flex';
+        sideMenuBtn.textContent = 'close';
+        isSideMenuOpen = true;
+    }
+}
+
+sideMenuBtn.addEventListener('click', toggleSideMenu);
+
+window.addEventListener('resize', function() {
+
+    if (window.innerWidth > 1025) {
+        sideMenu.style.display = 'flex';
+    } else if (isSideMenuOpen === false && window.innerWidth < 1025) {
+        sideMenu.style.display = 'none';
+    }
+});
