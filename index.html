@@ -13,14 +13,16 @@
 <body>
     <header>
         <div class="header__logo">
-            <h1>Dashboard</h1>
+            <span id="sideMenuBtn" class="material-symbols-outlined button">menu</span>
+            <a href="index.html">
+                <h1>Dashboard</h1>
+            </a>
         </div>
-
         <div class="header__search">
             <input type="text" placeholder="Search">
         </div>
-
         <div class="header__items">
+            <span id="searchBtn" class="material-symbols-outlined button">Search</span>
             <span class="material-symbols-outlined button">notifications</span>
             <span id="themeBtn" class="material-symbols-outlined button">dark_mode</span>
             <span class="material-symbols-outlined button">account_circle</span>
@@ -86,7 +88,115 @@
         </div>
     </div>
     <main>
-        
+        <div class="projects">
+            <h3>Your Projects</h3>
+            <div class="grid-item">
+                <p class="p--bold">Front-End project</p>
+                <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="project__buttons">
+                    <span class="material-symbols-outlined button">star</span>
+                    <span class="material-symbols-outlined button">edit</span>
+                    <span class="material-symbols-outlined button">share</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <p class="p--bold">Super cool project</p>
+                <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="project__buttons">
+                    <span class="material-symbols-outlined button">star</span>
+                    <span class="material-symbols-outlined button">edit</span>
+                    <span class="material-symbols-outlined button">share</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <p class="p--bold">Amazing app</p>
+                <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="project__buttons">
+                    <span class="material-symbols-outlined button">star</span>
+                    <span class="material-symbols-outlined button">edit</span>
+                    <span class="material-symbols-outlined button">share</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <p class="p--bold">Back-End project</p>
+                <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="project__buttons">
+                    <span class="material-symbols-outlined button">star</span>
+                    <span class="material-symbols-outlined button">edit</span>
+                    <span class="material-symbols-outlined button">share</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <p class="p--bold">WEB 3 project</p>
+                <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="project__buttons">
+                    <span class="material-symbols-outlined button">star</span>
+                    <span class="material-symbols-outlined button">edit</span>
+                    <span class="material-symbols-outlined button">share</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <p class="p--bold">React APP</p>
+                <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="project__buttons">
+                    <span class="material-symbols-outlined button">star</span>
+                    <span class="material-symbols-outlined button">edit</span>
+                    <span class="material-symbols-outlined button">share</span>
+                </div>
+            </div>
+        </div>
+        <div class="side-info">
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="grid-item">
+                    <div class="announcement">
+                        <p class="p--bold">Site Maintenance</p>
+                        <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="announcement">
+                        <p class="p--bold">Updated Privacy Policy</p>
+                        <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="announcement">
+                        <p class="p--bold">New Update</p>
+                        <p class="p--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="grid-item">
+                    <div class="trending__item">
+                        <img class="picture" src="assets/userAvatar.jpeg" alt="user photo">
+                        <div class="trending__item__conten">
+                            <p>@user0</p>
+                            <p class="p--gray">Lorem Ipsum is simply dummy text.</p>
+                        </div>
+                    </div>
+                    <div class="trending__item">
+                        <img class="picture" src="assets/userAvatar.jpeg" alt="user photo">
+                        <div class="trending__item__conten">
+                            <p>@user1</p>
+                            <p class="p--gray">Lorem Ipsum is simply dummy text.</p>
+                        </div>
+                    </div>
+                    <div class="trending__item">
+                        <img class="picture" src="assets/userAvatar.jpeg" alt="user photo">
+                        <div class="trending__item__conten">
+                            <p>@user2</p>
+                            <p class="p--gray">Lorem Ipsum is simply dummy text.</p>
+                        </div>
+                    </div>
+                    <div class="trending__item">
+                        <img class="picture" src="assets/userAvatar.jpeg" alt="user photo">
+                        <div class="trending__item__conten">
+                            <p>@user3</p>
+                            <p class="p--gray">Lorem Ipsum is simply dummy text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
