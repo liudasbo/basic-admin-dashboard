@@ -18,6 +18,7 @@ themeBtn.addEventListener('click', toggleTheme);
 // toggle side menu 
 const sideMenuBtn = document.getElementById('sideMenuBtn');
 const sideMenu = document.querySelector('.side-menu');
+const searchBtn = document.querySelector('#searchBtn');
 
 let isSideMenuOpen = false;
 
@@ -35,6 +36,7 @@ function toggleSideMenu() {
 }
 
 sideMenuBtn.addEventListener('click', toggleSideMenu);
+searchBtn.addEventListener('click', toggleSideMenu);
 
 window.addEventListener('resize', function() {
 

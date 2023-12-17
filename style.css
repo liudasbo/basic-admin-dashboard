@@ -136,6 +136,13 @@ input:focus {
     z-index: 1;
 }
 
+.side-menu__search {
+    display: flex;
+    height: 40px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
 .side-menu__items {
     display: flex;
     flex-direction: column;
@@ -305,6 +312,10 @@ main {
     /* header */
     .header__search {
         display: none;
+    }
+
+    .side-menu__search {
+        display: flex;
     }
 
     /* main */
